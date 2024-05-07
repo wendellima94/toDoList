@@ -36,4 +36,4 @@ async function toGet(req, res) {
   }
 }
 
-module.exports =  toGet;
+module.exports = { toGet, createUser };

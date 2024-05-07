@@ -15,7 +15,7 @@ app.use("/apiv1", routes);
 async function startServer() {
   try {
     connect()
-    const port = 3000 || 3003;
+    const port = 3003 || 3333;
     app.listen(port, () => console.log(`Listening on port ${port}...`));
 
     
