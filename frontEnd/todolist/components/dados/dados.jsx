@@ -1,11 +1,12 @@
-import React from "react";
-import api from "../api";
+import React, { useState } from "react";
+import api from "../../ultils/api";
 
 export default function Dados() {
-  const [dados, setDados] = React.useState(undefined);
+  const [dados, setDados] = useState(undefined);
 
   React.useEffect(() => {
-    api.get("apiv1/users").then((res) => {
+    api.get("apiv1/users").then(
+      (res) => {
       setDados(res.data.findAll);
     });
   }, []);

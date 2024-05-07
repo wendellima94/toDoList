@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import api from "../api";
+import api from "../../ultils/api";
 import Button from "../button/button";
 
 export default function Input() {
@@ -9,6 +9,7 @@ export default function Input() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    
     const newUser = {
       name: nome, 
       email: email,
